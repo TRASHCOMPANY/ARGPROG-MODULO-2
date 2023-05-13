@@ -1,6 +1,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Bakbak+One&family=Bebas+Neue&family=Modak&family=Pacifico&family=Permanent+Marker&display=swap');
-  .font-magic {
+ 
+ .font-magic {
       color: rgb(133, 228, 161) !important;
       font-family: 'Permanent Marker', cursive;
       text-shadow: 5px 10px 5px rgb(20, 20, 20);
@@ -18,10 +19,18 @@
       opacity: 1;
       width: 250px;
       box-shadow: 4px 4px 20px  rgb(20, 20, 20);
+      max-width: 100%;
+      height: auto;
  
   }
 
-
+  .inicio .img-container:hover {
+  
+    box-shadow: 4px 4px 20px  rgb(65, 197, 164);
+  
+    transition: all .2s ;
+ 
+}
   .inicio .img-profile{
     border: 7px solid  #ececec;
   }
@@ -45,6 +54,7 @@
   }
 
   .section{
+  
     background-color:  rgb(20, 20, 20);
   }
 
@@ -109,9 +119,11 @@
 }
 
 .body-graph{
-  display: flex;
+  align-items: center;
+  display:flex;
   gap: 30px;
   margin: 30px;
+
 }
 
 .porcentajes{
@@ -140,7 +152,7 @@ circle{
 circle:nth-child(2){ /* el segundo círculo, es el que se ve por encima del anterior y debe tener el color mas intenso y el area del porcentaje */
   stroke: var(--color);
   stroke-dasharray: 0 100;
-  animation: rellenar 2.92s linear forwards;
+  animation: rellenar 1.92s linear forwards;
 }
   
 
